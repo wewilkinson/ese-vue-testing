@@ -14,11 +14,14 @@
           </v-card-actions>
         </v-card>
       </v-flex>
+      <swanson-quote></swanson-quote>
     </v-layout>
   </v-container>
 </template>
 
 <script>
+  import SwansonQuote from './SwansonQuote.vue'
+
   export default {
     data () {
       return {
@@ -41,7 +44,10 @@
         ]
       }
     },
-    methods: {}
+    methods: {},
+    components: {
+      'swanson-quote': SwansonQuote
+    }
   }
 </script>
 
