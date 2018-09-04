@@ -30,42 +30,47 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      clipped: true,
-      drawer: true,
-      fixed: false,
-      items: [
-        {
-          icon: 'home',
-          title: 'Home',
-          path: '/'
-        },
-        {
-          icon: 'donut_small',
-          title: 'Hello',
-          path: '/hello'
-        },
-        {
-          icon: 'done_all',
-          title: 'New Data',
-          path: '/newData'
-        },
-        {
-          icon: 'adb',
-          title: 'API Testing',
-          path: '/apiTest'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'ESE Vue Testing'
-    }
-  },
-  name: 'App'
-}
+  export default {
+    data () {
+      return {
+        clipped: true,
+        drawer: true,
+        fixed: false,
+        items: [
+          {
+            icon: 'home',
+            title: 'Home',
+            path: '/'
+          },
+          {
+            icon: 'donut_small',
+            title: 'Hello',
+            path: '/hello'
+          },
+          {
+            icon: 'done_all',
+            title: 'New Data',
+            path: '/newData'
+          },
+          {
+            icon: 'adb',
+            title: 'API Testing',
+            path: '/apiTest'
+          },
+          {
+            icon: 'search',
+            title: 'Film Search',
+            path: '/filmSearch'
+          }
+        ],
+        miniVariant: false,
+        right: true,
+        rightDrawer: false,
+        title: 'ESE Vue Testing'
+      }
+    },
+    name: 'App'
+  }
 </script>
 
 <style scoped>

@@ -36,7 +36,7 @@
             <v-layout row wrap>
               <v-flex v-for="card in cards" v-bind="{ [`xs${card.flex}`]: true }" :key="card.title">
                 <v-card>
-                  <v-card-media :src="card.src" height="200px">
+                  <v-img :src="card.src" height="200px">
                     <v-container fill-height fluid pa-2>
                       <v-layout fill-height>
                         <v-flex xs12 align-end flexbox>
@@ -44,7 +44,7 @@
                         </v-flex>
                       </v-layout>
                     </v-container>
-                  </v-card-media>
+                  </v-img>
                   <v-card-actions>
                     <v-spacer></v-spacer>
                     <v-btn icon>
@@ -106,7 +106,6 @@
     },
     methods: {
       filterItems: function () {
-        console.log('IN M')
         this.items = this.items.filter(function (item) {
           return item.headline === 'Summer BBQ'
         })
