@@ -40,6 +40,11 @@
             title: 'New Data',
             link: '/newData',
             flex: 3
+          },
+          {
+            title: 'Film Search',
+            link: '/filmSearch',
+            flex: 3
           }
         ]
       }

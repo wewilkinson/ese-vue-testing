@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import NewData from '@/components/NewData'
 import ApiTest from '@/components/ApiTest'
 import Workspace from '@/components/Workspace'
+import FilmSearch from '@/components/FilmSearch'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/apiTest',
       name: 'ApiTest',
       component: ApiTest
+    },
+    {
+      path: '/filmSearch',
+      name: 'FilmSearch',
+      component: FilmSearch
     }
   ]
 })
