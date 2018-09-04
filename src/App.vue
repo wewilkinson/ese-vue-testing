@@ -16,6 +16,9 @@
       <v-toolbar-side-icon class="menu-icon" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-toolbar-side-icon class="menu-icon" href="/">
+        <v-icon>home</v-icon>
+      </v-toolbar-side-icon>
     </v-toolbar>
     <v-content>
       <router-view/>
@@ -38,6 +41,11 @@ export default {
           icon: 'home',
           title: 'Home',
           path: '/'
+        },
+        {
+          icon: 'donut_small',
+          title: 'Hello',
+          path: '/hello'
         },
         {
           icon: 'done_all',
